@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f8f8f8;
+  -webkit-font-smoothing: antialiased;
+  color: #404b5a;
+  font-family: "Archivo", sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
