@@ -12,7 +12,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
   </head>
   <body>
     <header>
-      <span>Qui, 19 Agosto</span>
+      <span class="day">Qui, 19 Agosto</span>
 
       <strong> Seja bem-vindo(a), João! </strong>
 
@@ -58,6 +58,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
       </main>
     </section>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/locale/pt-br.min.js"></script>
     <script src="<?= base_url('/assets/js/home.js') ?>"></script>
   </body>
 </html>

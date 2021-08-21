@@ -44,4 +44,14 @@ function checkAction() {
   action === "edit" && editMode();
 }
 
-checkAction();
+function putTheDayOnTheScreen() {
+  moment.locale("pt-br");
+  const date = moment().format("ddd, DD [de] MMMM");
+
+  document.getElementsByClassName("day")[0].innerHTML = date;
+}
+
+(() => {
+  checkAction();
+  putTheDayOnTheScreen();
+})();
