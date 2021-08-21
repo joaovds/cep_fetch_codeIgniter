@@ -22,7 +22,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <section class="container">
       <header>
         <h1>Suas informações:</h1>
-        <a href="#">Editar</a>
+        <a href="index.php?action=edit" class="toggleActionButton">Editar</a>
       </header>
 
       <main>
@@ -57,5 +57,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         </div>
       </main>
     </section>
+
+    <script src="<?= base_url('/assets/js/home.js') ?>"></script>
   </body>
 </html>
