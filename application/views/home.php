@@ -29,29 +29,29 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <div>
           <div class="input-group">
             <span>Estado</span>
-            <input type="text" readonly>
+            <input type="text" value="São Paulo" readonly>
           </div>
 
           <div class="input-group">
             <span>Bairro</span>
-            <input type="text" readonly>
+            <input type="text" value="Jardim dos girassóis" readonly>
           </div>
         </div>
 
         <div>
           <div class="input-group">
             <span>Cidade</span>
-            <input type="text" readonly>
+            <input type="text" value="Peruíbe" readonly>
           </div>
 
           <div class="input-group-2">
             <div class="input-group">
               <span>Rua</span>
-              <input type="text" readonly>
+              <input type="text" value="Jones Victor" readonly>
             </div>
             <div class="input-group">
               <span>Número</span>
-              <input type="number" readonly>
+              <input type="number" value="1207" readonly>
             </div>
           </div>
         </div>
