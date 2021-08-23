@@ -29,7 +29,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         </button>
 
         <span>
-          Ainda não tem conta? <a href="#">Crie uma agora</a>
+          Ainda não tem conta? <a href="register">Crie uma agora</a>
         </span>
       </form>
     </div>
