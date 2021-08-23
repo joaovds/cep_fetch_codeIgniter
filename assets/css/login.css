@@ -1,0 +1,111 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: #232526; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #414345,
+    #232526
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #414345,
+    #232526
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+form {
+  width: 100%;
+  max-width: 400px;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+    0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+
+  display: flex;
+  flex-direction: column;
+}
+
+form h1 {
+  font-size: 24px;
+  text-align: center;
+
+  color: #a9b8b8;
+}
+
+form .input-group {
+  width: 100%;
+  margin-top: 20px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+form .input-group span {
+  margin-bottom: 4px;
+  font-size: 14px;
+  color: #838e8f;
+}
+
+form .input-group input {
+  width: 100%;
+  padding: 8px 16px;
+
+  font-size: 18px;
+  color: #bbcccc;
+
+  background-color: transparent;
+  border: 1.5px solid #bbcccc;
+  border-radius: 8px;
+  outline: none;
+
+  transition: box-shadow 0.4s;
+}
+
+form .input-group input:focus {
+  box-shadow: 0px 0px 0.781034px rgba(0, 0, 0, 0.14),
+    0px 0.781034px 0.781034px rgba(0, 0, 0, 0.12),
+    0px 0.390517px 1.17155px rgba(0, 0, 0, 0.2);
+  border-color: #ccd2db;
+}
+
+form button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 40px;
+
+  font-size: 16px;
+  color: #e1f9fa;
+
+  background-color: #476db5;
+  border: 1px solid #476db5;
+  border-radius: 8px;
+  outline: none;
+
+  transition: box-shadow 0.4s;
+}
+
+form button:hover {
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.14), 0px 2px 2px rgba(0, 0, 0, 0.12),
+    0px 1px 3px rgba(0, 0, 0, 0.2) inset;
+}
+
+form > span {
+  width: 100%;
+  margin-top: 16px;
+
+  font-size: 14px;
+  text-align: right;
+
+  color: #5e6666;
+}
+
+form > span a {
+  color: #476db5;
+  text-decoration: none;
+}
