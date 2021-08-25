@@ -12,16 +12,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
   </head>
   <body>
     <div class="container">
-      <form>
+      <form action="<?= base_url('logar') ?>" method="post">
         <h1>Login</h1>
 
         <div class="input-group">
           <span>Email</span>
-          <input type="email">
+          <input type="email" name="email">
         </div>
         <div class="input-group">
           <span>Senha</span>
-          <input type="password">
+          <input type="password" name="password">
         </div>
 
         <button type="submit">
