@@ -16,9 +16,4 @@ class Register extends CI_Controller {
     $user->create();
     redirect(base_url('index.php'));
   }
-
-  public function login() {
-    $user = new UserModel();
-    $user->login();
-  }
 }

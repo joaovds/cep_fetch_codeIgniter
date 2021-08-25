@@ -11,12 +11,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <title>Home</title>
   </head>
   <body>
+    <?php if($this->session->userdata('logado')) { ?>
     <header>
       <span class="day">Qui, 19 Agosto</span>
 
-      <strong> Seja bem-vindo(a), João! </strong>
+      <strong> Seja bem-vindo(a), <?= $_SESSION['logado']['name'] ?>! </strong>
 
-      <a href="#"> Sair </a>
+      <a href="<?= base_url('logout') ?>"> Sair </a>
     </header>
 
     <section class="container">
@@ -66,5 +67,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/locale/pt-br.min.js"></script>
     <script type="module" src="<?= base_url('/assets/js/home.js') ?>"></script>
     <script type="module" src="<?= base_url('/assets/js/update.js') ?>"></script>
+
+    <?php } else { redirect(base_url('login')); };  ?>
   </body>
 </html>
