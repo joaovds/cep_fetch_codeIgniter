@@ -12,19 +12,19 @@ defined('BASEPATH') OR exit('No direct script access allowed');
   </head>
   <body>
     <div class="container">
-      <form>
+      <form action="<?= base_url('create') ?>" method="post">
         <h1>Register</h1>
 
         <main>
           <div>
             <div class="input-group">
               <span>Nome</span>
-              <input type="text">
+              <input type="text" name="name">
             </div>
 
             <div class="input-group">
               <span>Senha</span>
-              <input type="password">
+              <input type="password" name="password">
             </div>
 
             <div class="input-group">
@@ -36,14 +36,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
             <div class="input-group">
               <span>Rua</span>
-              <input type="text">
+              <input type="text" name="street">
             </div>
           </div>
 
           <div>
             <div class="input-group">
               <span>Email</span>
-              <input type="text">
+              <input type="text" name="email">
             </div>
 
             <div class="input-group">
@@ -55,12 +55,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
             <div class="input-group">
               <span>Bairro</span>
-              <input type="text">
+              <input type="text" name="district">
             </div>
 
             <div class="input-group">
               <span>Número</span>
-              <input type="number">
+              <input type="number" name="number">
             </div>
           </div>
         </main>
