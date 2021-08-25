@@ -28,8 +28,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             </div>
 
             <div class="input-group">
-              <span>Estado</span>
-              <input type="text">
+              <span>Cidade</span>
+              <select id="city" name="city">
+                <option value="0">Selecione uma Cidade</option>
+              </select>
             </div>
 
             <div class="input-group">
@@ -45,8 +47,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             </div>
 
             <div class="input-group">
-              <span>Cidade</span>
-              <input type="text">
+              <span>Estado</span>
+              <select id="uf" name="uf">
+                <option value="0">Selecione uma UF</option>
+              </select>
             </div>
 
             <div class="input-group">
@@ -70,5 +74,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         </span>
       </form>
     </div>
+
+    <script type="module" src="<?= base_url('/assets/js/register.js') ?>"></script>
   </body>
 </html>

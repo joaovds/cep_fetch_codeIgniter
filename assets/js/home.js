@@ -5,7 +5,7 @@ function getUrlParams() {
   return urlParams;
 }
 
-function defineAction() {
+export function defineAction() {
   const urlParams = getUrlParams();
 
   let action;
@@ -51,7 +51,7 @@ function putTheDayOnTheScreen() {
   document.getElementsByClassName("day")[0].innerHTML = date;
 }
 
-(() => {
+(async () => {
   checkAction();
   putTheDayOnTheScreen();
 })();

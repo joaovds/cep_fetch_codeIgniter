@@ -29,7 +29,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <div>
           <div class="input-group">
             <span>Estado</span>
-            <input type="text" value="São Paulo" readonly>
+            <select id="uf" name="uf">
+              <option value="SP">São Paulo</option>
+            </select>
           </div>
 
           <div class="input-group">
@@ -41,7 +43,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <div>
           <div class="input-group">
             <span>Cidade</span>
-            <input type="text" value="Peruíbe" readonly>
+            <select id="city" name="city">
+              <option value="Peruíbe">Peruíbe</option>
+            </select>
           </div>
 
           <div class="input-group-2">
@@ -60,6 +64,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/locale/pt-br.min.js"></script>
-    <script src="<?= base_url('/assets/js/home.js') ?>"></script>
+    <script type="module" src="<?= base_url('/assets/js/home.js') ?>"></script>
+    <script type="module" src="<?= base_url('/assets/js/update.js') ?>"></script>
   </body>
 </html>

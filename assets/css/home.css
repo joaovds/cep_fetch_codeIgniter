@@ -101,7 +101,8 @@ section.container main .input-group span {
   color: #6d7989;
 }
 
-section.container main .input-group input {
+section.container main .input-group input,
+select {
   width: 100%;
   padding: 8px 16px;
 
@@ -114,6 +115,12 @@ section.container main .input-group input {
   outline: none;
 
   transition: box-shadow 0.4s;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 section.container main .input-group input:focus {

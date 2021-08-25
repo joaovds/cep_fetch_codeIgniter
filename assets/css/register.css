@@ -72,7 +72,8 @@ form .input-group span {
   color: #838e8f;
 }
 
-form .input-group input {
+form .input-group input,
+select {
   width: 100%;
   padding: 8px 16px;
 
@@ -87,11 +88,14 @@ form .input-group input {
   transition: box-shadow 0.4s;
 }
 
-form .input-group input:focus {
-  box-shadow: 0px 0px 0.781034px rgba(0, 0, 0, 0.14),
-    0px 0.781034px 0.781034px rgba(0, 0, 0, 0.12),
-    0px 0.390517px 1.17155px rgba(0, 0, 0, 0.2);
-  border-color: #ccd2db;
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+form .input-group input:read-only {
+  border-color: #838e8f;
 }
 
 form button {
