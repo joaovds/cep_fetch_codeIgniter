@@ -37,6 +37,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <span style="display: flex; justify-content: space-around; margin-top: 40px;">
           <a href="login">PT-BR</a>
           <a href="login2">EN-US</a>
+          <a href="login3">FR-FR</a>
         </span>
       </form>
     </div>
